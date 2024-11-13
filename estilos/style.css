@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto" sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar .logo {
+  flex: 20%;
+  margin-left: 5%;
+}
+.navbar .logo img {
+  height: 100px;
+}
+.navbar .menu {
+  margin-left: -40%;
+  flex: 70%;
+  text-align: right;
+  padding: 20px;
+}
+.navbar .menu a {
+  color: #171f49;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 20px 16px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+}
+.navbar .menu #botao {
+  color: white;
+  padding: 10px 25px;
+  background-image: linear-gradient(#e21149, #fe5a3e);
+  border-radius: 5%;
+  margin-left: 20%;
+}
+.navbar .menu #lupa img {
+  height: 20px;
+  margin-right: 10%;
+}
+
+.header {
+  text-align: center;
+  height: 500px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.header p {
+  color: rgb(70, 63, 63);
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.header h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  color: #171f49;
+}
+.header .bot {
+  background: rgb(250, 248, 248);
+  padding: 50px;
+}
+.header .bot a {
+  border: 2px solid rgb(70, 63, 63);
+  padding: 14px 16px;
+  text-decoration: none;
+  color: rgb(70, 63, 63);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 5%;
+}
+.header #msg {
+  color: #171f49;
+  font-size: 25px;
+}
+.header #parceiros {
+  padding: 4px 16px;
+  color: white;
+  margin-top: 60px;
+  font-size: 15px;
+  background: #171f49;
+  margin-bottom: 50px;
+}
+
+.section1 {
+  margin-top: 300px;
+  background-color: #F9F9F9;
+  padding: 40px 20px;
+  text-align: center;
+}
+.section1 .headline {
+  display: inline-block;
+  text-align: center;
+  background-color: #D32F2F; /* Cor superior */
+  color: white;
+  padding: 20px;
+}
+.section1 .cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: #F9F9F9; /* Cor inferior */
+}
+.section1 .cards .card {
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.section1 .cards .card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.section1 .cards .card h3 {
+  margin: 15px 0;
+  font-size: 18px;
+  color: #171f49;
+}
+.section1 .cards .card a {
+  text-decoration: none;
+  color: #171f49;
+  font-weight: bold;
+}
+.section1 #proposta {
+  color: white;
+  letter-spacing: 0.1px;
+  font-weight: bold;
+  padding: 15px 10px;
+  text-decoration: none;
+  background: #171f49;
+  margin-bottom: 30px;
+}
+.section1 #respostas {
+  color: #171f49;
+  margin-top: 50px;
+}
+.section1 #respostas a {
+  text-decoration: none;
+  color: #171f49;
+  font-weight: bold;
+}
+
+#article {
+  text-align: center;
+}
+#article h3 {
+  font-size: 40px;
+  color: #171f49;
+}
+#article .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 100px);
+  margin-left: 5%;
+  margin-right: 5%;
+  row-gap: 10px;
+}
+#article .container .item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 20px 16px;
+  border: 1px solid rgb(231, 226, 226);
+}
+#article .container .item:hover {
+  border: 1px solid black;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+#article .container .item p {
+  font-size: 18px;
+  color: #171f49;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+#article .container .item img {
+  width: auto;
+  height: auto;
+}
+
+#portfolio {
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #171f49;
+}
+#portfolio .cabecalho {
+  display: flex;
+  flex-flow: row wrap;
+}
+#portfolio .cabecalho h3 {
+  font-size: 36px;
+  flex: 20%;
+}
+#portfolio .cabecalho p {
+  font-size: 20px;
+}
+#portfolio a {
+  text-decoration: none;
+}
+#portfolio .port {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+}
+#portfolio .it {
+  border-bottom: 1px solid #171f49;
+}
+#portfolio .it img {
+  height: 200px;
+  width: 100%;
+}
+#portfolio .it a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
